@@ -32,4 +32,4 @@ const launchesSchema = new mongoose.Schema({
 
 const launchs  = mongoose.model('Launch', launchesSchema);
 
-module.exports = launchs;
+module.exports = {launchs};

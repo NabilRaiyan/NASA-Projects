@@ -1,6 +1,6 @@
 const launches = new Map();
 const { flatMap } = require('lodash');
-const launchs = require('./launches.mongo');
+const {launchs} = require('./launches.mongo');
 const {planetModel} = require('./planets.mongo');
 const axios = require('axios');
 const { async } = require('regenerator-runtime');
