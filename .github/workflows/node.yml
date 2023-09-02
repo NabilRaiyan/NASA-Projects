@@ -22,8 +22,8 @@ jobs:
         with: 
           node-version: ${{ matrix.node-version }}
       - name: Use MongoDB from github actions
-         uses: supercharge/mongodb-github-action@v1.10.0
-         with:
+        uses: supercharge/mongodb-github-action@v1.10.0
+        with:
           mongodb-version: ${{ matrix.mongodb-version }}
 
       - run: npm install
