@@ -1,5 +1,6 @@
 const request = require('supertest');
 const app = require('../../app'); 
+const { loadPlanetData } = require('../../models/planets.model');
 
 
 describe ('Test GET /launches', ()=>{
@@ -8,6 +9,7 @@ describe ('Test GET /launches', ()=>{
         .get('/v1/launches')
         .expect('Content-Type', /json/)
         .expect(200);
+        loadPlanetData();
     });
 });
 
